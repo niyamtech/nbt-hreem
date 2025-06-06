@@ -1,0 +1,63 @@
+{
+  "name": "Fullstack .NET + React Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "8.0"
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "PKief.material-icon-theme",
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "streetsidesoftware.code-spell-checker",
+
+        "dsznajder.es7-react-js-snippets",
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "wix.vscode-import-cost",
+
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+
+        "Orta.vscode-jest",
+
+        "styled-components.vscode-styled-components",
+        "naumovs.color-highlight",
+
+        "eamodio.gitlens",
+        "aaron-bond.better-comments",
+        "usernamehw.errorlens",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "yzhang.markdown-all-in-one",
+
+        "HashiCorp.terraform",
+        "ms-vscode.azurecli",
+        "ms-azuretools.vscode-azureterraform",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker",
+        "mikestead.dotenv"
+      ]
+    }
+  },
+
+  "postCreateCommand": "dotnet restore || true",
+
+  "remoteUser": "vscode"
+}
